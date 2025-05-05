@@ -1,0 +1,41 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: white; /* beige background */
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+}
+
+.logo-text {
+    font-family: 'cursive'; /* or any other cursive font */
+    font-size: 36px;
+    color: #000; /* black color */
+    position: relative;
+    z-index: 1;
+}
+
+.logo-subtext {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #000; /* black color */
+    display: block;
+    margin-top: 5px;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px; /* adjust the width as needed */
+    height: 0px; /* adjust the height as needed */
+    background-image: linear-gradient(to right, #964B00, #786C3B, #454B1B); /* earthy tones */
+    transform: rotate(45deg);
+    z-index: 0;
+}
